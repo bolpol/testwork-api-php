@@ -1,0 +1,34 @@
+{
+  "name": "vendor_name/package_name",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0",
+    "ext-json":"*",
+    "mikecao/flight": "v1.3.7",
+    "windwalker/http": "~3.0",
+    "illuminate/database": "5.5.x-dev",
+    "illuminate/events": "5.5.x-dev",
+    "guzzlehttp/guzzle": "6.3.0",
+    "gridonic/json-response": "1.*"
+  },
+  "autoload": {
+    "classmap": [
+      "App/Controller/",
+      "App/Model/",
+      "App/Modifier/"
+    ],
+    "files": [
+      "App/Helper.php",
+      "App/routers.php",
+      "config.php"
+    ]
+  }
+}
